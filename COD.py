@@ -1,9 +1,16 @@
-a = 12
 
-b = 32
+temp = int(input("Введите температуру (°C): "))
+rain = int(input("Есть осадки? (1/2) 1 - да 2 - нет: "))
 
-print ("Hello world")
+if rain == 1 and 30 > temp > 20 :
+    print("Наденьте Футболку, Шорты, дождевик")
 
-print("MR-31")
+elif rain == 2 and 30 > temp > 20 :
+    print("Наденьте Футболку, Шорты")
 
-ljbhguyfuyfuoyf
+elif temp < 0:
+    print("Наденьте пуховик")
+
+elif temp > 0 and rain == 2 :
+    print("Наденьте пальто")
+
